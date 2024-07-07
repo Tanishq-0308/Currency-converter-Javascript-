@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkolivegreen;
+}
+
+.converter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 20px 34px;
+}
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+.input-container ,.input2-container{
+    border: 1.9px solid #b8b4b4fd;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+.input-container input,.input-container select ,
+.input2-container input,.input2-container select{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+}
+.input-container:focus-within , .input2-container:focus-within{
+    border-color: rgb(31, 31, 156);
+    border-width: 2px;
+}
+.arrow{
+    font-size: 32px;
+}
+#result{
+    font-size: 25px;
+    font-weight: bold;
+}
+@media(max-width:404px){
+    .input-container input,.input-container select ,
+.input2-container input,.input2-container select{
+    border: 1.8px solid #b8b4b4fd;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.input-container ,.input2-container{
+    border: none;
+}
+.input-container input:focus-within , .input2-container input:focus-within{
+    border-color: rgb(31, 31, 156);
+    border-width: 2px;
+}
+}
